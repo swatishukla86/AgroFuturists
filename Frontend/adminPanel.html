@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    main {
+      flex: 1;
+    }
+    .shadow{
+        cursor: pointer;
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Navbar -->
+  <nav class="bg-blue-600 p-4 text-white flex justify-between">
+    <div class="text-xl">Admin Panel</div>
+    <div class="space-x-4">
+      <a href="#" class="hover:underline">Independent Farmer</a>
+      <a href="#" class="hover:underline">Industrial Farmer</a>
+      <a href="#" class="hover:underline">Employee</a>
+    </div>
+  </nav>
+
+  <div class="flex flex-1">
+
+    <!-- Side Panel -->
+    <aside class="bg-gray-800 text-white w-64 p-6 space-y-4">
+      <div><a href="#" class="block hover:bg-gray-700 p-2">Manage Farmers</a></div>
+      <div><a href="#" class="block hover:bg-gray-700 p-2">Manage Employees</a></div>
+      <div><a href="#" class="block hover:bg-gray-700 p-2">Verify Products</a></div>
+      <div><a href="#" class="block hover:bg-gray-700 p-2">Manage Products</a></div>
+      <div><a href="#" class="block hover:bg-gray-700 p-2">Training Sessions</a></div>
+      <div><a href="#" class="block hover:bg-gray-700 p-2">Truck Bookings</a></div>
+      <div><a href="#" class="block hover:bg-gray-700 p-2">Credit Bonds</a></div>
+    </aside>
+
+    <!-- Main Body Section -->
+    <main class="flex-1 p-6">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+
+        <!-- Card Example -->
+        <div class="bg-white p-4 rounded shadow ">
+          <img src="https://images.unsplash.com/photo-1496247749665-49cf5b1022e9?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Industrial Farmers" class="w-full h-32 object-cover rounded">
+          <a class="mt-2 text-xl font-bold" href="indusFarm.html">Industrial Farmers</a>
+          <p class="mt-2">Manage Industrial Farmers.</p>
+        </div>
+
+        <div class="bg-white p-4 rounded shadow ">
+          <img src="https://images.unsplash.com/photo-1605000797499-95a51c5269ae?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Independent Farmers" class="w-full h-32 object-cover rounded">
+          <a class="mt-2 text-xl font-bold" href="indiFarm.html">Independent Farmers</a>
+          <p class="mt-2">Manage Independent Farmers.</p>
+        </div>
+
+        <div class="bg-white p-4 rounded shadow ">
+          <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Employees" class="w-full h-32 object-cover rounded">
+          <a class="mt-4 text-xl font-bold" href="employee.html">Employees</a>
+          <p class="mt-2">Manage Employees.</p>
+        </div>
+
+      </div>
+    </main>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-blue-600 p-4 text-white text-center py-2">
+    <p>&copy; 2024 E-commerce Web App. All rights reserved.</p>
+    <p>123 Fake Street, City, Country</p>
+    <p>Email: info@ecommerce.com | Phone: (123) 456-7890</p>
+  </footer>
+
+</body>
+</html>
+ 

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern HTML Page with Tailwind CSS</title>
+    <!-- Include Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-white flex items-center justify-center h-screen">
+
+    <div class="container mx-auto flex justify-between items-center">
+        
+        <!-- Left Side (Image) -->
+        <div class="w-40 md:w-1/2 h-full">
+            <img src="https://images.unsplash.com/photo-1666502728565-0ba1c7a15532?q=80&w=1961&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                alt="AgroFuturists Image"
+                class="object-cover w-40l h-100"
+            >
+        </div>
+
+        <!-- Right Side (Content) -->
+        <div class="w-60 md:w-1/2 flex items-center justify-center px-8 py-12">
+            <div class="bg-blue-400 p-8 rounded-lg shadow-lg w-80">
+                <h1 class="text-4xl font-bold mb-4 text-center text-white">AgroFuturists</h1>
+
+                <!-- Language Buttons -->
+                <div class="mt-6 mb-4 w-full flex flex-col justify-center items-center gap-5 ">
+                    <a id="english" href="select.html" name="language" value="english" type="button" class="block text-center w-60 bg-white text-black hover:bg-blue-200 hover:text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                        English
+                    </a>
+                    <button id="hindi" name="language" value="hindi" type="button" class="block w-60 bg-white text-black hover:bg-blue-200 hover:text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                        Hindi
+                    </button>
+                    <button id="marathi" name="language" value="marathi" type="button" class="block w-60 bg-white text-black hover:bg-blue-200 hover:text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                        Marathi
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

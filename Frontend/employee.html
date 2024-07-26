@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Panel</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    main {
+      flex: 1;
+    }
+    .shadow {
+        cursor: pointer;
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Navbar -->
+  <nav class="bg-blue-600 p-4 text-white flex justify-between">
+    <div class="text-xl">Employee Panel</div>
+    <div class="space-x-4">
+      <a href="#" class="hover:underline">Home</a>
+      <a href="#" class="hover:underline">Logout</a>
+    </div>
+  </nav>
+
+  <div class="flex flex-1">
+
+    <!-- Side Panel -->
+    <aside class="bg-gray-800 text-white w-64 p-6 space-y-4">
+      <div><a href="#" class="block hover:bg-gray-700 p-2">Pesticide Delivery</a></div>
+      <div><a href="#" class="block hover:bg-gray-700 p-2">Training</a></div>
+      <div><a href="#" class="block hover:bg-gray-700 p-2">Logistics</a></div>
+      <div><a href="#" class="block hover:bg-gray-700 p-2">Equipment Status</a></div>
+      <div><a href="#" class="block hover:bg-gray-700 p-2">SMS update farmers</a></div>
+    </aside>
+
+    <!-- Main Body Section -->
+    <main class="flex-1 p-6">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+
+        <!-- Employee Details Card -->
+        <div class="bg-white p-4 rounded shadow">
+          <img src="https://images.unsplash.com/photo-1521566652839-697aa473761a?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Employee" class="w-32 h-32 object-cover rounded-full mx-auto">
+          <h3 class="mt-4 text-xl font-bold text-center">Jane Doe</h3>
+          <p class="text-center">Company: Agriculture Co.</p>
+          <p class="text-center">Employee Number: EMP123456</p>
+          <p class="text-center">Salary: $50,000/year</p>
+        </div>
+
+        <!-- Individual Responsibility Cards -->
+        <div class="bg-white p-4 rounded shadow">
+          <img src="https://images.unsplash.com/photo-1628352081506-83c43123ed6d?q=80&w=1896&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Pesticide Delivery" class="w-full h-32 object-cover rounded">
+          <h3 class="mt-2 text-xl font-bold">Pesticide Delivery</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus esse voluptate harum accusamus sapiente nulla!</p>
+        </div>
+
+        <div class="bg-white p-4 rounded shadow">
+          <img src="https://images.unsplash.com/photo-1664006264603-675b581ce108?q=80&w=1791&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Training" class="w-full h-32 object-cover rounded">
+          <h3 class="mt-2 text-xl font-bold">Training</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus esse voluptate harum accusamus sapiente nulla!</p>
+
+        </div>
+
+        <div class="bg-white p-4 rounded shadow">
+          <img src="https://images.unsplash.com/photo-1494412651409-8963ce7935a7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Logistics" class="w-full h-32 object-cover rounded">
+          <h3 class="mt-2 text-xl font-bold">Logistics</h3>
+        </div>
+
+        <div class="bg-white p-4 rounded shadow">
+          <img src="https://images.unsplash.com/photo-1666214282554-39104df48982?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Equipment Status" class="w-full h-32 object-cover rounded">
+          <h3 class="mt-2 text-xl font-bold">Equipment Status</h3>
+        </div>
+
+        <div class="bg-white p-4 rounded shadow">
+          <img src="https://images.unsplash.com/photo-1654195131868-cac1d8429d86?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Crop Maturity Tracking" class="w-full h-32 object-cover rounded">
+          <h3 class="mt-2 text-xl font-bold">Crop Maturity Tracking</h3>
+        </div>
+
+      </div>
+    </main>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-blue-600 p-4 text-white text-center py-2">
+    <p>&copy; 2024 E-commerce Web App. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

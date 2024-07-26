@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Web App</title>
+    <link href="output.css" rel="stylesheet">
+    <style>
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: #1a202c;
+        }
+
+        .navbar a {
+            color: white;
+            margin-left: 1rem;
+            text-decoration: none;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        @media (max-width: 768px) {
+        .navbar {
+            flex-direction: column;
+            align-items: center;
+        }
+        .navbar a {
+            font-size: 14px;
+            padding: 10px 0;
+        }
+        .main-content {
+            padding: 10px;
+        }
+        .main-content h1 {
+            font-size: 24px;
+        }
+        .main-content p {
+            font-size: 14px;
+        }
+    }
+    </style>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 10px;
+            }
+        }
+    </style>
+    
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="text-white text-2xl font-bold">E-commerce</div>
+        <div>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <div class="dropdown">
+                <a href="#" class="text-white">Categories</a>
+                <div class="dropdown-content">
+                    <a href="#rice">Rice</a>
+                    <a href="#cereals">Cereals</a>
+                    <a href="#pulses">Pulses</a>
+                    <a href="#wheat">Wheat</a>
+                    <a href="#seeds">Seeds</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="text-center py-20 bg-gray-100">
+        <h1 class="text-4xl font-bold">Welcome to Our E-commerce Web App</h1>
+        <p class="mt-4 text-lg">Your one-stop shop for agricultural products.</p>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-20">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center">Our Products</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+                <div class="border rounded-lg shadow-md overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1646980990815-1e97d5ee932f?q=80&w=1800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Product 1" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold">Rice</h3>
+                        <p class="mt-2">Description of Product 1</p>
+                    </div>
+                </div>
+                <div class="border rounded-lg shadow-md overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1529511582893-2d7e684dd128?q=80&w=1933&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Product 2" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold">Wheat</h3>
+                        <p class="mt-2">Description of Product 2</p>
+                    </div>
+                </div>
+                <div class="border rounded-lg shadow-md overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1705475388190-775066fd69a5?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Product 3" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold">Pulses</h3>
+                        <p class="mt-2">Description of Product 3</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="py-20 bg-gray-100">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center">Categories</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mt-10">
+                <div class="border rounded-lg shadow-md overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1500040760498-8be2dccbdea7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Rice" class="w-full h-32 object-cover">
+                    <div class="p-4 text-center">
+                        <h3 class="text-xl font-semibold">Rice</h3>
+                    </div>
+                </div>
+                <div class="border rounded-lg shadow-md overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1582407123556-59f95920eeaa?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cereals" class="w-full h-32 object-cover">
+                    <div class="p-4 text-center">
+                        <h3 class="text-xl font-semibold">Cereals</h3>
+                    </div>
+                </div>
+                <div class="border rounded-lg shadow-md overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1662982689227-0791c9107172?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Pulses" class="w-full h-32 object-cover">
+                    <div class="p-4 text-center">
+                        <h3 class="text-xl font-semibold">Pulses</h3>
+                    </div>
+                </div>
+                <div class="border rounded-lg shadow-md overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1497448134719-754ac7fd09eb?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Wheat" class="w-full h-32 object-cover">
+                    <div class="p-4 text-center">
+                        <h3 class="text-xl font-semibold">Wheat</h3>
+                    </div>
+                </div>
+                <div class="border rounded-lg shadow-md overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1641912593355-134c57c76246?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Seeds" class="w-full h-32 object-cover">
+                    <div class="p-4 text-center">
+                        <h3 class="text-xl font-semibold">Seeds</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white text-center py-4">
+        <p>&copy; 2024 E-commerce Web App. All rights reserved.</p>
+        <p>123 Fake Street, City, Country</p>
+        <p>Email: info@ecommerce.com | Phone: (123) 456-7890</p>
+    </footer>
+</body>
+</html>
